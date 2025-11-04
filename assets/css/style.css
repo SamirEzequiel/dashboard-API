@@ -1,0 +1,73 @@
+/* Paleta dark suave */
+:root {
+  --bg: #0f172a;
+  --fg: #e2e8f0;
+  --muted: #94a3b8;
+  --task-bg: rgba(255, 255, 255, 0.9);
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.card {
+  border: 0;
+  border-radius: 1rem;
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+.glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+}
+
+/* Estilos para la lista de tareas */
+.list-group-item.bg-transparent {
+  background-color: var(--task-bg) !important;
+  color: #000 !important;
+}
+
+.list-group-item .form-check-label {
+  color: #000 !important;
+}
+
+.list-group-item .form-check-input:checked + .form-check-label {
+  color: var(--muted) !important;
+}
+
+/* Estilo para el botón de eliminar */
+.btn-delete {
+  color: #dc3545 !important;
+  background: transparent;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.btn-delete:hover {
+  color: #bb2d3b !important;
+}
+
+.text-muted { color: var(--muted) !important; }
+
+/* Estilo para las tareas */
+.form-check-label {
+  color: #000 !important;
+}
+
+.list-group-item {
+  color: #000 !important;
+}
+
+/* Mantener el estilo para tareas completadas */
+.text-decoration-line-through.text-muted {
+  color: var(--muted) !important;
+}
